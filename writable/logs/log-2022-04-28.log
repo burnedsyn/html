@@ -1,0 +1,105 @@
+CRITICAL - 2022-04-28 03:20:50 --> Class "App\Libraries\RecursiveIteratorIterator" not found
+#0 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 03:36:32 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(47): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 03:42:58 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(48): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 03:43:24 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(48): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 03:46:57 --> Undefined array key 0
+#0 /var/www/html/app/Libraries/TarotCard.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(49): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 03:48:50 --> Call to undefined function App\Libraries\stringval()
+#0 /var/www/html/app/Libraries/TarotCard.php(50): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 03:56:16 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(47): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 06:59:50 --> Call to undefined function App\Libraries\getOne()
+#0 /var/www/html/app/Libraries/TarotCard.php(69): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 07:07:12 --> syntax error, unexpected token ","
+#0 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/html/app/Controllers/UserController.php(11): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 07:07:29 --> Too few arguments to function App\Libraries\TarotCard::getOne(), 1 passed in /var/www/html/app/Libraries/TarotCard.php on line 74 and exactly 2 expected
+#0 /var/www/html/app/Libraries/TarotCard.php(74): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 07:17:20 --> Undefined variable $localPath
+#0 /var/www/html/app/Libraries/TarotCard.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(80): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 07:31:15 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

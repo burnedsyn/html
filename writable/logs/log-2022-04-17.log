@@ -1,0 +1,8 @@
+CRITICAL - 2022-04-17 23:53:37 --> Undefined property: App\Libraries\TarotCard::$temp
+#0 /var/www/html/app/Libraries/TarotCard.php(95): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

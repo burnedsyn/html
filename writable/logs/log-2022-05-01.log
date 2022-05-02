@@ -1,0 +1,292 @@
+CRITICAL - 2022-05-01 04:47:11 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(143): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 04:47:11 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 04:51:10 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(142): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 04:51:10 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 04:55:56 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(142): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 04:55:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 04:58:15 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(143): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 04:58:15 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 05:00:43 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(146): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 05:00:43 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 05:08:40 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(146): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 05:08:40 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-01 05:09:01 --> WriteBlob Failed `/var/www/html/build/images/0.png' @ error/png.c/MagickPNGErrorHandler/1628
+#0 /var/www/html/app/Controllers/UserController.php(146): Imagick->writeImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-01 05:09:01 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 450 in /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:156
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(156): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Debug/Exceptions.php(111): CodeIgniter\HTTP\Response->setStatusCode()
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-01 07:53:35 --> Unknown column 'clearDna' in 'field list'
+CRITICAL - 2022-05-01 07:53:35 --> Unknown column 'clearDna' in 'field list'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(111): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 15:42:06 --> Duplicate entry '7617f09e3840cbc18546f14063f9a3136d12db3e86a26e4f57a9c2970e36524e' for key 'dna'
+CRITICAL - 2022-05-01 15:42:06 --> Duplicate entry '7617f09e3840cbc18546f14063f9a3136d12db3e86a26e4f57a9c2970e36524e' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(106): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 16:47:23 --> Duplicate entry '84c19bbaa55ccd0cff044635d70a256c373540634e4bdd44d31a2940000a75f4' for key 'dna'
+CRITICAL - 2022-05-01 16:47:23 --> Duplicate entry '84c19bbaa55ccd0cff044635d70a256c373540634e4bdd44d31a2940000a75f4' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 17:24:16 --> Duplicate entry 'f20888c3a87addbfe55fc8322197c23cd2c3cd42866c5d9d122a13133fa3637d' for key 'dna'
+CRITICAL - 2022-05-01 17:24:16 --> Duplicate entry 'f20888c3a87addbfe55fc8322197c23cd2c3cd42866c5d9d122a13133fa3637d' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:05:42 --> Duplicate entry '9aba27859590b00692d5b2f5b97c8732b49eb3668e7bdcc75d5a2469371b333c' for key 'dna'
+CRITICAL - 2022-05-01 18:05:42 --> Duplicate entry '9aba27859590b00692d5b2f5b97c8732b49eb3668e7bdcc75d5a2469371b333c' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:06:45 --> Duplicate entry '8e00e3ebed2e5c2d4fc675c76cc26a248d136ccdcfefd8418ab3390bbddd3ca2' for key 'dna'
+CRITICAL - 2022-05-01 18:06:45 --> Duplicate entry '8e00e3ebed2e5c2d4fc675c76cc26a248d136ccdcfefd8418ab3390bbddd3ca2' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:07:09 --> Duplicate entry 'b1b139441f27720db19decbfe6842b7494ed47c1c7e09c45a838c15f5b432bca' for key 'dna'
+CRITICAL - 2022-05-01 18:07:09 --> Duplicate entry 'b1b139441f27720db19decbfe6842b7494ed47c1c7e09c45a838c15f5b432bca' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:07:25 --> Duplicate entry '84c19bbaa55ccd0cff044635d70a256c373540634e4bdd44d31a2940000a75f4' for key 'dna'
+CRITICAL - 2022-05-01 18:07:25 --> Duplicate entry '84c19bbaa55ccd0cff044635d70a256c373540634e4bdd44d31a2940000a75f4' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:17:44 --> Duplicate entry '0f40cd265e59e8f83732b105a9c441efeb717a83bd8ba9ab84126d68a4414ce8' for key 'dna'
+CRITICAL - 2022-05-01 18:17:44 --> Duplicate entry '0f40cd265e59e8f83732b105a9c441efeb717a83bd8ba9ab84126d68a4414ce8' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:18:45 --> Duplicate entry '2853b82bc3fe2de855cffd6fa2ffdacfe0d50d51c85bf1b13f5de15c6daa5a33' for key 'dna'
+CRITICAL - 2022-05-01 18:18:45 --> Duplicate entry '2853b82bc3fe2de855cffd6fa2ffdacfe0d50d51c85bf1b13f5de15c6daa5a33' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:19:10 --> Duplicate entry 'c0ca6c1ab96167b7c75388af8a0b26adb93719463cf281d913e24819c6ee0ab1' for key 'dna'
+CRITICAL - 2022-05-01 18:19:10 --> Duplicate entry 'c0ca6c1ab96167b7c75388af8a0b26adb93719463cf281d913e24819c6ee0ab1' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 18:19:22 --> Duplicate entry '86aaa943092fcc91d29609f31bfba1f88ff32bb71c2c517506a06c659d035701' for key 'dna'
+CRITICAL - 2022-05-01 18:19:22 --> Duplicate entry '86aaa943092fcc91d29609f31bfba1f88ff32bb71c2c517506a06c659d035701' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(122): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 19:12:07 --> Duplicate entry '1ba79780af6a06cb96bcbfa67e0268cb8493e7275681f793065689a458dd1991' for key 'dna'
+CRITICAL - 2022-05-01 19:12:07 --> Duplicate entry '1ba79780af6a06cb96bcbfa67e0268cb8493e7275681f793065689a458dd1991' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(123): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 19:12:42 --> Duplicate entry 'aa1e7c4a70a6b43d5042299e831971de976823315c972b17e2bb560910336f8f' for key 'dna'
+CRITICAL - 2022-05-01 19:12:42 --> Duplicate entry 'aa1e7c4a70a6b43d5042299e831971de976823315c972b17e2bb560910336f8f' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(123): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-01 19:12:51 --> Duplicate entry '232875accc1aa37c4d4221d9b0d36e13d35b43ac477ca5e5613d1c1e714d404b' for key 'dna'
+CRITICAL - 2022-05-01 19:12:51 --> Duplicate entry '232875accc1aa37c4d4221d9b0d36e13d35b43ac477ca5e5613d1c1e714d404b' for key 'dna'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(123): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

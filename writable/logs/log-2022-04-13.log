@@ -1,0 +1,688 @@
+CRITICAL - 2022-04-13 02:26:29 --> Undefined variable $map
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(15): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 02:27:14 --> Undefined variable $map
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(15): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 02:27:18 --> Undefined variable $map
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(15): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 02:28:33 --> Undefined variable $map
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(15): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 02:28:46 --> Undefined variable $map
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(15): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 02:34:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /var/www/html/app/Controllers/UserController.php(15): view()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-13 02:37:32 --> Undefined property: App\Controllers\UserController::$load
+#0 /var/www/html/app/Controllers/UserController.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 02:38:18 --> Call to undefined method App\Controllers\UserController::view()
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-13 02:38:29 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /var/www/html/app/Controllers/UserController.php(16): view()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-13 03:17:57 --> Undefined variable $siteName
+#0 /var/www/html/app/Views/user.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(18): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 03:33:46 --> Array to string conversion
+#0 /var/www/html/app/Controllers/UserController.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 03:34:03 --> Array to string conversion
+#0 /var/www/html/app/Controllers/UserController.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 03:39:55 --> Undefined constant "App\Controllers\rep"
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-13 03:40:40 --> Array to string conversion
+#0 /var/www/html/app/Controllers/UserController.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 03:41:02 --> Undefined array key 0
+#0 /var/www/html/app/Controllers/UserController.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 04:12:23 --> Undefined array key 0
+#0 /var/www/html/app/Controllers/UserController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 04:25:09 --> Undefined variable $config
+#0 /var/www/html/app/Controllers/UserController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 04:29:42 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-13 04:33:58 --> Undefined variable $map
+#0 /var/www/html/app/Controllers/UserController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 04:37:26 --> syntax error, unexpected token "}", expecting ";"
+#0 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(797): class_exists()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-13 04:37:38 --> Undefined variable $map
+#0 /var/www/html/app/Controllers/UserController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 04:38:04 --> Undefined variable $layersOrder
+#0 /var/www/html/app/Views/user.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(32): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 04:47:47 --> Undefined variable $i
+#0 /var/www/html/app/Controllers/UserController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 05:29:56 --> Object of class Config\NftConfig could not be converted to int
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): intval()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 05:37:36 --> Undefined array key "Background"
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(38): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:08:06 --> Cannot access offset of type string on string
+#0 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /var/www/html/app/Controllers/UserController.php(38): view()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-13 06:17:04 --> Array to string conversion
+#0 /var/www/html/app/Controllers/UserController.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(24): App\Controllers\UserController->randomelem()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 06:19:36 --> syntax error, unexpected identifier "test"
+#0 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(797): class_exists()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-13 06:34:32 --> Call to undefined function App\Controllers\map()
+#0 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 06:35:10 --> Undefined variable $temp
+#0 /var/www/html/app/Controllers/UserController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 06:35:57 --> Undefined variable $temp
+#0 /var/www/html/app/Controllers/UserController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 06:36:21 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:37:58 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:39:36 --> Undefined constant "App\Controllers\length"
+#0 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-13 06:42:08 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:43:03 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:46:40 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:48:17 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:55:16 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:55:41 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:57:10 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:59:02 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 06:59:48 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:10:57 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:15:19 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:17:42 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:18:12 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:18:56 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:20:10 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:20:36 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:20:38 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:22:07 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:23:27 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:24:01 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:24:31 --> syntax error, unexpected token "}"
+#0 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(797): class_exists()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-13 07:24:40 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:28:37 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:31:26 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:32:25 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:34:00 --> Undefined array key 0
+#0 /var/www/html/app/Controllers/UserController.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 07:37:02 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:41:06 --> Undefined array key 0
+#0 /var/www/html/app/Controllers/UserController.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(19): App\Controllers\UserController->randomelem()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-13 07:42:27 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:43:23 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:43:58 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:44:28 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:45:00 --> Trying to access array offset on value of type bool
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:45:29 --> Undefined array key "Background"
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:45:33 --> Undefined array key "Background"
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 07:49:13 --> Undefined array key "Background"
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 17:27:54 --> Undefined array key "Background"
+#0 /var/www/html/app/Views/user.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(28): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

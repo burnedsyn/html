@@ -1,0 +1,173 @@
+CRITICAL - 2022-04-23 03:05:49 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 03:06:38 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 03:09:07 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 04:48:43 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(114): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 04:50:54 --> Array to string conversion
+#0 /var/www/html/app/Libraries/TarotCard.php(115): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 05:02:15 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:03:31 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:03:32 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:03:35 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:03:35 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:04:12 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:04:13 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:04:13 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:04:15 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(98): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(116): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:04:46 --> syntax error, unexpected variable "$currentprob"
+#0 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/html/app/Controllers/UserController.php(11): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:05:00 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(99): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(117): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:12:30 --> foreach() argument must be of type array|object, string given
+#0 /var/www/html/app/Libraries/TarotCard.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(99): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(117): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 05:13:23 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(99): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(117): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:15:03 --> Cannot access offset of type string on string
+#0 /var/www/html/app/Libraries/TarotCard.php(99): App\Libraries\TarotCard->getOne()
+#1 /var/www/html/app/Libraries/TarotCard.php(117): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 05:15:30 --> Undefined variable $item
+#0 /var/www/html/app/Libraries/TarotCard.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(117): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(13): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

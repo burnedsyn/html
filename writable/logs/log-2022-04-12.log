@@ -1,0 +1,26 @@
+CRITICAL - 2022-04-12 12:58:13 --> syntax error, unexpected token "if"
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-12 12:58:36 --> syntax error, unexpected token "if"
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-12 12:58:58 --> Undefined variable $toutes
+#0 /var/www/html/app/Config/Routes.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(713): require('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 18:28:46 --> Undefined variable $routes
+#0 /var/www/html/app/Config/Routes.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Router/RouteCollection.php(607): CodeIgniter\CodeIgniter->Config\{closure}()
+#2 /var/www/html/app/Config/Routes.php(38): CodeIgniter\Router\RouteCollection->group()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(713): require('...')
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

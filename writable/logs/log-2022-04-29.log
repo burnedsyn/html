@@ -1,0 +1,534 @@
+CRITICAL - 2022-04-29 03:47:09 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 03:50:48 --> Undefined variable $localPath
+#0 /var/www/html/app/Libraries/TarotCard.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 03:51:35 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:21:46 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:22:25 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:22:28 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:23:55 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:23:59 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:30:20 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(54): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(82): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:35:30 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(55): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(83): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:36:21 --> foreach() argument must be of type array|object, null given
+#0 /var/www/html/app/Libraries/TarotCard.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(56): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(84): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 04:45:36 --> Undefined variable $layer_info
+#0 /var/www/html/app/Libraries/TarotCard.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(85): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 04:52:03 --> Undefined variable $layer_info
+#0 /var/www/html/app/Libraries/TarotCard.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(85): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 04:53:46 --> Undefined variable $layer_info
+#0 /var/www/html/app/Libraries/TarotCard.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(86): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 04:53:49 --> Undefined variable $layer_info
+#0 /var/www/html/app/Libraries/TarotCard.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(86): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 04:54:06 --> Undefined variable $layer_info
+#0 /var/www/html/app/Libraries/TarotCard.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(86): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 05:17:34 --> A non-numeric value encountered
+#0 /var/www/html/app/Libraries/TarotCard.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(61): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(90): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 05:43:37 --> A non-numeric value encountered
+#0 /var/www/html/app/Libraries/TarotCard.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(61): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Libraries/TarotCard.php(89): App\Libraries\TarotCard->getOne()
+#3 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-29 05:52:14 --> A non-numeric value encountered
+#0 /var/www/html/app/Libraries/TarotCard.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Libraries/TarotCard.php(92): App\Libraries\TarotCard->getOne()
+#2 /var/www/html/app/Controllers/UserController.php(26): App\Libraries\TarotCard->getCard()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 06:14:45 --> 'break' not in the 'loop' or 'switch' context
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-29 06:30:48 --> Object of class App\Controllers\UserController could not be converted to string
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-29 06:31:36 --> Undefined variable $data
+#0 /var/www/html/app/Views/user.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(210): include('...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/app/Controllers/UserController.php(23): view()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-29 06:38:30 --> Undefined array key "$veriflayer"
+#0 /var/www/html/app/Libraries/TarotCard.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 06:39:02 --> Undefined array key "Background"
+#0 /var/www/html/app/Libraries/TarotCard.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 07:24:00 --> Undefined array key "adn"
+#0 /var/www/html/app/Libraries/TarotCard.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 07:29:06 --> Undefined array key "adn"
+#0 /var/www/html/app/Libraries/TarotCard.php(95): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 07:33:12 --> Undefined array key "adn"
+#0 /var/www/html/app/Libraries/TarotCard.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 07:44:35 --> Unsupported operand types: string + string
+#0 /var/www/html/app/Controllers/UserController.php(16): App\Libraries\TarotCard->getCard()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-29 08:10:05 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(33): array_unique()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 08:10:37 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/UserController.php(33): array_unique()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 08:17:52 --> Undefined array key "adn"
+#0 /var/www/html/app/Controllers/UserController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-29 10:17:23 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2022-04-29 10:17:23 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(36): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 10:18:58 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2022-04-29 10:18:58 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(36): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 10:41:03 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2022-04-29 10:41:03 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-29 10:42:10 --> Class "CodeIgniter\Database\SQLite\Connection" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(56): CodeIgniter\Database\Database->initDriver()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(78): CodeIgniter\Database\Database->load()
+#2 /var/www/html/app/Controllers/UserController.php(34): CodeIgniter\Database\Config::connect()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 10:43:39 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2022-04-29 10:43:39 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 11:05:30 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2022-04-29 11:05:30 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 11:06:06 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2022-04-29 11:06:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 11:07:17 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2022-04-29 11:07:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 11:09:09 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2022-04-29 11:09:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/Config.php(105): CodeIgniter\Database\Database->loadForge()
+#2 /var/www/html/app/Controllers/UserController.php(35): CodeIgniter\Database\Config::forge()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-04-29 11:24:32 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+CRITICAL - 2022-04-29 11:24:32 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/Forge.php(513): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/UserController.php(65): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-29 12:00:13 --> Undefined property: App\Controllers\UserController::$db
+#0 /var/www/html/app/Controllers/UserController.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-29 12:01:21 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-29 12:04:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-29 13:22:10 --> improper image header `' @ error/png.c/ReadPNGImage/3954
+#0 /var/www/html/app/Controllers/UserController.php(13): Imagick->readImageBlob()
+#1 /var/www/html/app/Controllers/UserController.php(50): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:27:34 --> improper image header `' @ error/png.c/ReadPNGImage/3954
+#0 /var/www/html/app/Controllers/UserController.php(14): Imagick->readImageBlob()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:29:23 --> improper image header `' @ error/png.c/ReadPNGImage/3954
+#0 /var/www/html/app/Controllers/UserController.php(14): Imagick->readImageBlob()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:30:18 --> The path is a directory: /var/www/html/app/ressources/Background/rarity#10
+#0 /var/www/html/app/Controllers/UserController.php(12): Imagick->__construct()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:35:08 --> The path is a directory: /var/www/html/app/ressources/Background/rarity#10
+#0 /var/www/html/app/Controllers/UserController.php(12): Imagick->__construct()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:36:46 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(12): Imagick->__construct()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:38:03 --> improper image header `' @ error/png.c/ReadPNGImage/3954
+#0 /var/www/html/app/Controllers/UserController.php(14): Imagick->readImageBlob()
+#1 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 13:39:54 --> Class "App\Controllers\Imagick" not found
+#0 /var/www/html/app/Controllers/UserController.php(51): App\Controllers\UserController->initImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-29 13:48:45 --> Class "App\Controllers\Config\Services" not found
+#0 /var/www/html/app/Controllers/UserController.php(52): App\Controllers\UserController->initImage()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-29 13:49:47 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(15): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(52): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:12:03 --> Class "App\Controllers\imagick" not found
+#0 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#1 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-29 14:13:12 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-29 14:15:36 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(55): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:18:37 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(55): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:26:17 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(56): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:28:57 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(56): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:37:04 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(61): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-29 14:40:57 --> The path is a directory: /var/www/html/app/ressources/Background/common#90
+#0 /var/www/html/app/Controllers/UserController.php(18): Imagick->readImage()
+#1 /var/www/html/app/Controllers/UserController.php(62): App\Controllers\UserController->initImage()
+#2 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
