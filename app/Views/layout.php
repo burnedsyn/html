@@ -211,6 +211,7 @@
 				<button onclick="toggleMenu();">&#9776;</button>
 			</li>
 			<li class="menu-item hidden"><a href="#">Home</a></li>
+			<li class="menu-item hidden"><a href="/collection">collection</a></li>
 			
 		</ul>
 	</div>
@@ -220,6 +221,7 @@
 		<h1>Welcome to Tim's CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?> Nft Art Generator</h1>
 
 		<h2>Digital ArtWork Application</h2>
+		
 		<a href="https://1proamonservice.eu/" target="_blank"> 1proamonservice.eu</a>
         
 

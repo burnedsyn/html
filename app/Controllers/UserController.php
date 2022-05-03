@@ -156,18 +156,17 @@ public function verifScene(array $card, TarotCard $baseCard){
                $verifSigData=file_get_contents('../public/build/imgsig/'.$i.'.dat');
 
                // indique si la signature est correcte
-$ok = openssl_verify($card['sig'],$verifSigData, $this->pubkeyid);
-if ($ok == 1) {
-    echo "Signature valide";
-    echo("<h4>".$card['sig']."</h4>");
-    $card['signatureFile']='/build/imgsig/'.$i.'.dat';
-
-} elseif ($ok == 0) {
-    echo "Signature erronée";
-} else {
-    echo "Erreur de vérification de la signature";
-}               //little tric to save the json path in the json file before being certain that it is written see the if not
-               $card['jsonFile']='/build/cardinfo/'.$i.'.json';
+                $ok = openssl_verify($card['sig'],$verifSigData, $this->pubkeyid);
+                if ($ok == 1) {
+                    echo "Signature valide";
+                    echo ("<h4>" . $card['sig'] . "</h4>");
+                    $card['signatureFile'] = '/build/imgsig/' . $i . '.dat';
+                } elseif ($ok == 0) {
+                    echo "Signature erronée";
+                } else {
+                    echo "Erreur de vérification de la signature";
+                }               //little tric to save the json path in the json file before being certain that it is written see the if not
+                $card['jsonFile']='/build/cardinfo/'.$i.'.json';
 
                $card2=print_r($card,true);
                $card2=json_encode($card2);
