@@ -50,6 +50,10 @@ class ComposerStaticInit14b19127113242a99e705aeb0188e805
         array (
             'Faker\\' => 6,
         ),
+        'E' => 
+        array (
+            'Elliptic\\' => 9,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -59,6 +63,11 @@ class ComposerStaticInit14b19127113242a99e705aeb0188e805
         array (
             'Config\\' => 7,
             'CodeIgniter\\' => 12,
+        ),
+        'B' => 
+        array (
+            'BN\\' => 3,
+            'BI\\' => 3,
         ),
         'A' => 
         array (
@@ -70,8 +79,8 @@ class ComposerStaticInit14b19127113242a99e705aeb0188e805
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -113,6 +122,10 @@ class ComposerStaticInit14b19127113242a99e705aeb0188e805
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
+        'Elliptic\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/simplito/elliptic-php/lib',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -128,6 +141,14 @@ class ComposerStaticInit14b19127113242a99e705aeb0188e805
         'CodeIgniter\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeigniter4/framework/system',
+        ),
+        'BN\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/simplito/bn-php/lib',
+        ),
+        'BI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/simplito/bigint-wrapper-php/lib',
         ),
         'App\\' => 
         array (

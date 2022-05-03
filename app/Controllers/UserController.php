@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 use App\Libraries\TarotCard;
-use DateTime;
 
 ini_set('max_execution_time', 0); // 0 = Unlimited      
 date_default_timezone_set('Europe/Brussels');
@@ -10,6 +9,7 @@ class UserController extends BaseController
 {        
      public $cardCollection=[];   
      public $db;
+     
      /* 
      * InitImage permet de générer les layers a partir des images en ressources
      * 
@@ -22,7 +22,7 @@ class UserController extends BaseController
 
         return $im;
     }
-
+    
 public function verifScene(array $card, TarotCard $baseCard){
     $config=config('NftConfig');
     $adn='';
@@ -56,6 +56,7 @@ public function verifScene(array $card, TarotCard $baseCard){
        $config=config('NftConfig');
        $baseCard=new TarotCard();
        $count=intval($config->nftCollectionSize);
+       
 
        for($i=0; $i < $count ; $i++) {
             
@@ -82,7 +83,7 @@ public function verifScene(array $card, TarotCard $baseCard){
        $this->db = \Config\Database::connect();
        $builder = $this->db->table('cards');
        $i=0;
-       
+       $collectionSize= count($this->cardCollection);
        $provenanceCumulativeString="";
        
        foreach($this->cardCollection as $card)
@@ -97,32 +98,35 @@ public function verifScene(array $card, TarotCard $baseCard){
 
                $images[]= $this->initImage($card[$layer],$imgformat);
 
-           }
-           
+           }                         
+           $card["sig"]=null;
           
            
-           $card["sig"]="0x00";
-           $query = $builder->getWhere(['dna' => $card['dna']]);
+           $query = $builder->where(['dna' => $card['dna']]);
+
            
-            while ( $query->currentRow > 0 ) {
-                d($query);
+           
+           $test=$query->countAllResults();
 
-                echo "<h1>DNA EXIST !!!</h1><hr>";
-                $images=null;
-                $card=$baseCard->getCard();
-                $card=$this->verifScene($card,$baseCard);
-                foreach($config->layers as $layer) {
+           
+                                            
+             while (!empty($test)) {
+               
+                echo "<h1>DNA EXIST !!!</h1><p>generating new scene</p><hr>";
+                $images = null;
+                $card = $baseCard->getCard();
+                $card = $this->verifScene($card, $baseCard);
+                echo("<p>New scene generated..<br> Verifying dna :".$card['dna']."</p>");
+                foreach ($config->layers as $layer) {
 
-                    $images[]= $this->initImage($card[$layer],$imgformat);
-    
+                    $images[] = $this->initImage($card[$layer], $imgformat);
                 }
-                $this->cardCollection[$i]=$card;
-                $query = $builder->getWhere(['dna' => $card['dna']]);
-                d($query);
-                d($card);
-                
-            } 
-                 
+                $this->cardCollection[$i] = $card;
+                $query = $builder->Where(['dna' => $card['dna']]);
+                $test=$query->countAllResults();
+
+
+            }  
         
            if($builder->insert($card)){
                // here we got a unic adn stored in db we create the image in  build/images directory
@@ -139,13 +143,15 @@ public function verifScene(array $card, TarotCard $baseCard){
                
                $pathtoimg=$config->buildPath."images/";
                 
+
                $baseimage->writeImage($pathtoimg.$i.".png");
-               $card["sig"]=hash_file('sha512', $pathtoimg.$i.".png");
+
+               $card["sig"]=hash_file('sha3-512', $pathtoimg.$i.".png");
                $card["creationDate"]=date("Y-m-d H:i:s");
                $card["imagePath"]="/build/images/".$i.".png";
                $this->cardCollection[$i]=$card;
                $i++;
-               continue;
+               
           }else{
             echo("<hr>ICI ERROR<hr>");
             echo $this->db->error();
@@ -153,10 +159,12 @@ public function verifScene(array $card, TarotCard $baseCard){
           } 
           ;
        }
+
         $data['cumulativeString']=$provenanceCumulativeString;
         $data['provenanceCumulativeHash']=hash("sha512",$provenanceCumulativeString);
         $data['sitename']= $config->siteName;
         $data['cardCollection']=$this->cardCollection;
+        
         return view('Views/user', $data);
         //return view('Views/user');
     }

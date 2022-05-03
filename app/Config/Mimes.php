@@ -480,6 +480,7 @@ class Mimes
             'application/vnd.ms-pki.stl',
             'application/x-navistyle',
         ],
+        'txt'  =>  'text/event-stream',
     ];
 
     /**
