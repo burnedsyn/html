@@ -127,6 +127,6 @@ nb-configuration.xml
 
 #asset
 
-public/build/
-public/phpMyAdmin/
-build/
+public/build/*
+public/phpMyAdmin/*
+build/*

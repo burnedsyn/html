@@ -9,7 +9,8 @@ class UserController extends BaseController
 {        
      public $cardCollection=[];   
      public $db;
-     
+     public $privKey;
+     public $pubkeyid;
      /* 
      * InitImage permet de générer les layers a partir des images en ressources
      * 
@@ -56,8 +57,9 @@ public function verifScene(array $card, TarotCard $baseCard){
        $config=config('NftConfig');
        $baseCard=new TarotCard();
        $count=intval($config->nftCollectionSize);
-       
-
+       $this->privKey=openssl_pkey_get_private('file://./priv.key');
+       helper('filesystem');
+       $this->pubkeyid = openssl_pkey_get_public("file://./pub.key");
        for($i=0; $i < $count ; $i++) {
             
         $this->cardCollection[]=$baseCard->getCard();
@@ -141,15 +143,43 @@ public function verifScene(array $card, TarotCard $baseCard){
                    $baseimage->compositeImage($images[$k],$images[$k]->getImageCompose(), 0, 0 );
                }
                
-               $pathtoimg=$config->buildPath."images/";
-                
+               $pathtoimg="./build/images/";
+                          
 
                $baseimage->writeImage($pathtoimg.$i.".png");
 
                $card["sig"]=hash_file('sha3-512', $pathtoimg.$i.".png");
                $card["creationDate"]=date("Y-m-d H:i:s");
                $card["imagePath"]="/build/images/".$i.".png";
+               openssl_sign($card['sig'], $hashSig, $this->privKey);
+               file_put_contents('./build/imgsig/'.$i.'.dat', $hashSig);
+               $verifSigData=file_get_contents('../public/build/imgsig/'.$i.'.dat');
+
+               // indique si la signature est correcte
+$ok = openssl_verify($card['sig'],$verifSigData, $this->pubkeyid);
+if ($ok == 1) {
+    echo "Signature valide";
+    echo("<h4>".$card['sig']."</h4>");
+    $card['signatureFile']='/build/imgsig/'.$i.'.dat';
+
+} elseif ($ok == 0) {
+    echo "Signature erronée";
+} else {
+    echo "Erreur de vérification de la signature";
+}               //little tric to save the json path in the json file before being certain that it is written see the if not
+               $card['jsonFile']='/build/cardinfo/'.$i.'.json';
+
+               $card2=print_r($card,true);
+               $card2=json_encode($card2);
+               if ( ! write_file('./build/cardinfo/'.$i.'.json', $card2)) {
+                echo 'Unable to write the file ./build/cardinfo/'.$i.'.json';
+                $card['jsonFile']=null;
+            } else {
+                    echo '<p>json data card File written!</p>';
+                }
+            
                $this->cardCollection[$i]=$card;
+
                $i++;
                
           }else{

@@ -40,6 +40,13 @@ EOF; ?>        <?php }?>
 
 <?php
 }
+
+/**
+** uses codes below to create collection private and public key use in digital certification of images, json, and procure sig file
+**/
+
+/*
+ 
 $dn = array("countryName" => 'BE', "stateOrProvinceName" => 'Hainaut', "localityName" => 'Houdeng-Aimeries', "organizationName" => 'Nft Artist Alliance', "organizationalUnitName" => 'Kaerdon', "commonName" => 'Kaerdon', "emailAddress" => 'tim@1proamonservice.eu');
 $privkeypass = '';
 $numberofdays = 3650;
@@ -62,7 +69,9 @@ file_put_contents('pub.key',$publickey);
 file_put_contents('csr.pem', $csrStr);
 openssl_pkey_export_to_file($privkey, 'example-priv.key');
 // En même temps que le sujet, la CSR contient la clé publique correspondant à la clé privée
-openssl_csr_export_to_file($csr, 'example-csr.pem');
+openssl_csr_export_to_file($csr, 'example-csr.pem'); 
+
+*/
 
 ?>
 
