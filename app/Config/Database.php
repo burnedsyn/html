@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         
         'hostname' => '127.0.0.1',
-        'username' => 'root',
-        'password' => 'mariadb',
-        'database' => 'nftdb',
+        'username' => '',
+        'password' => '',
+        'database' => '',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => true,

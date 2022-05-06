@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get("/collection",'CollectionController::index');
+$routes->post("/collection",'CollectionController::index');
+//$routes->resource('/sse');
+$routes->get('/sse','Sse::tim');
+$routes->post('/collection/tim','CollectionController::tim');
 
 
 $routes->group("user",function($routes) {

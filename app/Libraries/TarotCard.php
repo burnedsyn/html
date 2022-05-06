@@ -6,7 +6,7 @@ use PhpParser\Node\Stmt\Else_;
 
 use function PHPUnit\Framework\isEmpty;
 
-defined('APPPATH') OR exit('No direct script access allowed');
+
 helper('filesystem');
 
 

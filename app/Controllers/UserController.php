@@ -54,11 +54,13 @@ public function verifScene(array $card, TarotCard $baseCard){
 
     public function index()
     {
+       helper('filesystem');
        $config=config('NftConfig');
        $baseCard=new TarotCard();
        $count=intval($config->nftCollectionSize);
+       
        $this->privKey=openssl_pkey_get_private('file://./priv.key');
-       helper('filesystem');
+       
        $this->pubkeyid = openssl_pkey_get_public("file://./pub.key");
        for($i=0; $i < $count ; $i++) {
             
