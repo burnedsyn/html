@@ -3,6 +3,8 @@
 namespace App\Controllers;
 use App\Libraries\TarotCard;
 
+use function PHPUnit\Framework\isNull;
+
 ini_set('max_execution_time', 0); // 0 = Unlimited      
 date_default_timezone_set('Europe/Brussels');
 class UserController extends BaseController
@@ -23,7 +25,30 @@ class UserController extends BaseController
 
         return $im;
     }
+    public function tim()
+    {
+      // ...
+        if(!empty($_SESSION['lastCard'])) {
+            $message=$_SESSION['lastCard'];
+            $_SESSION['lastCard']='';
+            $this->send_message($message , 10); 
+            ob_end_flush();
+
+        }
     
+  }
+  
+ 
+   public function send_message($message, $progress) {
+        
+         
+     $d = array('message' => $message , 'progress' => $progress);
+ 
+     echo(json_encode($d,true));
+     
+ 
+   
+ }
 public function verifScene(array $card, TarotCard $baseCard){
     $config=config('NftConfig');
     $adn='';
@@ -58,7 +83,7 @@ public function verifScene(array $card, TarotCard $baseCard){
        $config=config('NftConfig');
        $baseCard=new TarotCard();
        $count=intval($config->nftCollectionSize);
-       
+       $_SESSION['lastCard']=array();
        $this->privKey=openssl_pkey_get_private('file://./priv.key');
        
        $this->pubkeyid = openssl_pkey_get_public("file://./pub.key");
@@ -180,7 +205,9 @@ public function verifScene(array $card, TarotCard $baseCard){
                 }
             
                $this->cardCollection[$i]=$card;
-
+                $_SESSION['lastCard']+=$card;
+                $_SESSION['index']=$i;
+                sleep(1);
                $i++;
                
           }else{

@@ -36,7 +36,7 @@ $routes->get('/', 'Home::index');
 $routes->get("/collection",'CollectionController::index');
 $routes->post("/collection",'CollectionController::index');
 //$routes->resource('/sse');
-$routes->get('/sse','Sse::tim');
+$routes->post('/user/tim','UserController::tim');
 $routes->post('/collection/tim','CollectionController::tim');
 
 

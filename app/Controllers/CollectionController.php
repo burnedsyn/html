@@ -22,31 +22,38 @@ class CollectionController extends BaseController
         //$cards=null;
         /* $table = new \CodeIgniter\View\Table();
         $test2=$table->generate($cards); 
-        $this->collection=new Collection();*/
+        $this->collection=new Collection();,"Cards"=>$cards*/
 
 
-        $data=["welcome"=>"Collection Manager","Cards"=>$cards];
+        $data=["welcome"=>"Collection Manager"];
         return view('Views/collection/index', $data);
      
 
     }
  
-   public function tim()
-   {
-     // ...
+    public function tim()
+    {
+      // ...
+     
+      if(!empty($_SESSION['lastCard'])) {
+        $message=$_SESSION['lastCard'];
+       // $_SESSION['lastCard'][]='';
+        $this->send_message($message , 10); 
+      
+        
+    }
     
-    
-     $this->send_message('on iteration  of 10' , 10); 
-   
- }
- 
+  }
 
   public function send_message($message, $progress) {
        
         
     $d = array('message' => $message , 'progress' => $progress);
 
-    echo(json_encode($d));
+    echo(json_encode($d,true));
+    flush();
+    ob_flush();
+    ob_end_flush();
     
 
   

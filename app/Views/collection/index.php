@@ -15,13 +15,13 @@ function sendMessage(){
        if(len > 0){
          // Read values
           var titi=JSON.parse(response);
-          addLog(titi.message);
+          if(titi.message != null) addLog(titi.message);
 
 
           //..........
 
             var pBar = document.getElementById('progressor');
-             pBar.value += pBar.value+(titi.progress/100);
+             pBar.value = pBar.value+(titi.progress/100);
              var perc = document.getElementById('percentage');
              perc.innerHTML   = titi.progress/100  + "%";
              perc.style.width = (Math.floor(pBar.clientWidth * (titi.progress/100)) + 15) + 'px';
@@ -40,7 +40,7 @@ var myInterval;
  function startTask() {
   
  
-  myInterval=setInterval( "sendMessage()", 1000 );
+  myInterval=setInterval( "sendMessage()", 10000 );
 
         
    
