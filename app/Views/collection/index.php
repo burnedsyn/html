@@ -5,31 +5,59 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
 <script type="text/javascript">
-function sendMessage(){
+function sendMessage(id){
   $.ajax({
      url:'/collection/tim',
      method: 'post',
+     data: 'id',
      success: function(response){
-       var len = response.length;
-      
-       if(len > 0){
+       
          // Read values
           var titi=JSON.parse(response);
-          if(titi.message != null) addLog(titi.message);
+          addLog('on a une carte');
+          if(titi.message != null) {
+            var info = titi.message;
+            var tempdata;
+            tempdata='';
+            <?php
+              $config=config('NftConfig');
+              $layers=$config->layers;
+            ?>
+            var count=0;
+            tempdata+='<table style="background-color:white">';
+            if(info.error !== undefined )
+            tempdata+= '<tr style="background-color:red; color:white;"><td>' + info.error + '</td></tr>';
+            <?php foreach ($layers as $item): ?>
+              count++;
+              if (count%2==0) color='cyan'; else color='white'
+              if(info.<?= $item ?> !== undefined) tempdata+='<tr style="background-color:'+color +'"><td><?= $item ?> :' + info.<?= $item ?>+'</td></tr>';
+
+            <?php endforeach ?>
+            tempdata+='<tr><td> clearDna : '+info.clearDna+'</td></tr>';
+            tempdata+='<tr><td> dna : '+info.dna+'</td></tr>';
+                      
+            
+            tempdata+='</table>';
+            addLog(tempdata);
+            if(info.operation =='complete') stopTask();
+            
 
 
-          //..........
+
+
+            //..........
 
             var pBar = document.getElementById('progressor');
-             pBar.value = pBar.value+(titi.progress/100);
+             pBar.value = pBar.value+(titi.progress);
              var perc = document.getElementById('percentage');
-             perc.innerHTML   = titi.progress/100  + "%";
-             perc.style.width = (Math.floor(pBar.clientWidth * (titi.progress/100)) + 15) + 'px';
+             var totperc = perc.innerHTML;
+             perc.innerHTML   = parseInt(totperc)  +  parseInt(titi.progress) + "%" ;
+             perc.style.width = (Math.floor(pBar.clientWidth * (titi.progress)) + 15) + 'px';
 
            //............
-         
+          }
           
-       }
+       
  
      }
    });
@@ -40,7 +68,7 @@ var myInterval;
  function startTask() {
   
  
-  myInterval=setInterval( "sendMessage()", 10000 );
+  myInterval=setInterval( "sendMessage(1)", 1000);
 
         
    
@@ -49,7 +77,7 @@ var myInterval;
   
  function stopTask() {
   if (typeof myInterval != 'undefined') clearTimeout(myInterval);
-   clearInterval(myInterval);
+     clearInterval(myInterval);
      addLog('Interrupted');
  }
   
@@ -82,7 +110,7 @@ var myInterval;
          
         <p>Results</p>
         <br />
-        <div id="results" style="border:1px solid #000; padding:10px; width:300px; height:250px; overflow:auto; background:#eee;"></div>
+        <div id="results" ></div>
         <br />
          
         <progress id='progressor' value="0" max='100' style=""></progress>  

@@ -56,7 +56,7 @@ public $ressourcePath;
         }//fin foreach
               
     }
-    public function getCard() {
+public function getCard() {
 
         /*
         ** ici on selectionne les éléments de l'image finale on compile l'image

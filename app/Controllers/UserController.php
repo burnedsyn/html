@@ -3,7 +3,6 @@
 namespace App\Controllers;
 use App\Libraries\TarotCard;
 
-use function PHPUnit\Framework\isNull;
 
 ini_set('max_execution_time', 0); // 0 = Unlimited      
 date_default_timezone_set('Europe/Brussels');
@@ -25,30 +24,10 @@ class UserController extends BaseController
 
         return $im;
     }
-    public function tim()
-    {
-      // ...
-        if(!empty($_SESSION['lastCard'])) {
-            $message=$_SESSION['lastCard'];
-            $_SESSION['lastCard']='';
-            $this->send_message($message , 10); 
-            ob_end_flush();
-
-        }
-    
-  }
+   
   
  
-   public function send_message($message, $progress) {
-        
-         
-     $d = array('message' => $message , 'progress' => $progress);
- 
-     echo(json_encode($d,true));
-     
- 
-   
- }
+
 public function verifScene(array $card, TarotCard $baseCard){
     $config=config('NftConfig');
     $adn='';
@@ -112,7 +91,7 @@ public function verifScene(array $card, TarotCard $baseCard){
        $this->db = \Config\Database::connect();
        $builder = $this->db->table('cards');
        $i=0;
-       $collectionSize= count($this->cardCollection);
+       
        $provenanceCumulativeString="";
        
        foreach($this->cardCollection as $card)
@@ -122,7 +101,6 @@ public function verifScene(array $card, TarotCard $baseCard){
            //ici modif verif finale
            $card=$this->verifScene($card,$baseCard);
            $this->cardCollection[$i]=$card;
-           $images=array();
            foreach($config->layers as $layer) {
 
                $images[]= $this->initImage($card[$layer],$imgformat);
@@ -205,9 +183,8 @@ public function verifScene(array $card, TarotCard $baseCard){
                 }
             
                $this->cardCollection[$i]=$card;
-                $_SESSION['lastCard']+=$card;
-                $_SESSION['index']=$i;
-                sleep(1);
+               
+                
                $i++;
                
           }else{

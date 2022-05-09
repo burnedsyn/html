@@ -7,16 +7,19 @@ date_default_timezone_set('Europe/Brussels');
 use App\Controllers\BaseController;
 use App\Models\Collection;
 use App\Models\Cards;
-use PHPUnit\Util\Json;
-
+use CodeIgniter\API\ResponseTrait;
+use App\Libraries\SceneManager;
 class CollectionController extends BaseController
 
 {   
-    
+    use ResponseTrait;
     protected $collection;
     
     public function index()
     {    
+      $config = config('NftConfig');
+      $maxCall=intval($config->nftCollectionSize);
+      $_SESSION['maxCall']=$maxCall;
         $test=new Cards();
         $cards=$test->findAll();
         //$cards=null;
@@ -33,27 +36,40 @@ class CollectionController extends BaseController
  
     public function tim()
     {
-      // ...
-     
-      if(!empty($_SESSION['lastCard'])) {
-        $message=$_SESSION['lastCard'];
-       // $_SESSION['lastCard'][]='';
-        $this->send_message($message , 10); 
+      $message=[];
+      $temp= new SceneManager();
+      $message=$temp->getScene();
+      $this->db = \Config\Database::connect();
+      $builder = $this->db->table('cards');
       
+      
+      
+   if ($message !=''){
         
+        $progress=1;
+       
+      }
+      else {
+        $message='No Change';
+        $progress=0;
+      } 
+      
+        $this->send_message($message , $progress); 
+        
+     
     }
     
-  }
+  
 
   public function send_message($message, $progress) {
        
         
     $d = array('message' => $message , 'progress' => $progress);
-
+    //$this->respond($d, 200);
     echo(json_encode($d,true));
-    flush();
-    ob_flush();
-    ob_end_flush();
+    
+    
+    
     
 
   
