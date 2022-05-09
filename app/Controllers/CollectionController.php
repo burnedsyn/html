@@ -35,13 +35,15 @@ class CollectionController extends BaseController
     }
  
     public function tim()
-    {
+    { 
+      $start_time = microtime(TRUE);
+     
       $message=[];
       $temp= new SceneManager();
       $message=$temp->getScene();
-      $this->db = \Config\Database::connect();
-      $builder = $this->db->table('cards');
       
+
+
       
       
    if ($message !=''){
@@ -53,10 +55,12 @@ class CollectionController extends BaseController
         $message='No Change';
         $progress=0;
       } 
-      
+        $end_time = microtime(TRUE);
+        $message['totalTime']=$end_time-$start_time;
+        
         $this->send_message($message , $progress); 
         
-     
+        
     }
     
   

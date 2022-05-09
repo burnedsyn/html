@@ -23,6 +23,9 @@ class SceneManager
         $this->ressourcePath = $this->config->ressourcePath;
         $this->message=array();
         $this->collection =array();
+        $this->privKey=openssl_pkey_get_private('file://./priv.key');
+        $this->pubkeyid = openssl_pkey_get_public("file://./pub.key");
+
     } // fin construct
 
     public function getOne($ressourcesPath)
@@ -102,23 +105,48 @@ class SceneManager
     */
 
         $scene = [];
-
-        foreach ($this->layers as $currentLayer) {
-            $pathtoscan = $this->ressourcePath . $currentLayer;
-            $scene[$currentLayer]=$this->getOne($pathtoscan);
-        } // fin foreach layer
-
-        //create dna of this scene
-        $adn='';
-        foreach($this->layers as $layer){
-            $tmppath=$scene[$layer];
-            if(is_dir($tmppath) || is_null($tmppath)) $scene[$layer]=$this->getOne($tmppath);          
-            $adn=$adn.$scene[$layer];
-
-        }
+        $test=1;
+        $this->db = \Config\Database::connect();
+        $builder = $this->db->table('cards');
+        $errorDna=0;
+        $tempErrorString='';
         
+        while (!empty($test)) {
+            $test--;
+            foreach ($this->layers as $currentLayer) {
+                $pathtoscan = $this->ressourcePath . $currentLayer;
+                $scene[$currentLayer]=$this->getOne($pathtoscan);
+            } // fin foreach layer
+    
+            //create dna of this scene
+            $adn='';
+            foreach($this->layers as $layer){
+                $tmppath=$scene[$layer];
+                if(is_dir($tmppath) || is_null($tmppath)) $scene[$layer]=$this->getOne($tmppath);          
+                $adn=$adn.$scene[$layer];
+    
+            }
+            
+            $scene=$this->verifScene($scene);
+            $query = $builder->where(['dna' => $scene['dna']]);
+            $test=$query->countAllResults();
+            $errorDna+=$test;
+            if($errorDna > 0){
+                $tempErrorString.="<hr> Error Dna Exist <br>Restoring scene<br> dna ".$scene['dna']."<br>";
+            }
+                        
+
+
+        } 
+        if($tempErrorString != ''){
+            if(isset($scene['error'])) $scene['error'].=$tempErrorString; else $scene['error']=$tempErrorString;
+        }
         //verif conformity of this scene
         $scene=$this->verifScene($scene);
+        //as we have a verified scene and thus all data for layer are ok we build the image
+        $scene["sig"]=null;
+        $scene["errorDna"]=$errorDna; 
+        
 
         $images=array();
         $imgformat=$this->config->imgformat; 
@@ -126,7 +154,9 @@ class SceneManager
 
             $images[]= $this->initImage($scene[$layer],$imgformat);
 
-        }                    
+        } 
+        
+                        
                
         $scene['maxCall']=$_SESSION['maxCall'];
         $_SESSION['maxCall']--;

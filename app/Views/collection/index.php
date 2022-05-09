@@ -14,17 +14,20 @@ function sendMessage(id){
        
          // Read values
           var titi=JSON.parse(response);
-          addLog('on a une carte');
+          
           if(titi.message != null) {
             var info = titi.message;
+            addLog('<h2>Scene '+info.maxCall+'</h2>');
             var tempdata;
             tempdata='';
             <?php
               $config=config('NftConfig');
               $layers=$config->layers;
+              $size=$config->nftCollectionSize;
             ?>
             var count=0;
-            tempdata+='<table style="background-color:white">';
+            var toto=<?= $size ?> 
+            tempdata+='<table style="background-color:white" id="'+info.maxCall+'">';
             if(info.error !== undefined )
             tempdata+= '<tr style="background-color:red; color:white;"><td>' + info.error + '</td></tr>';
             <?php foreach ($layers as $item): ?>
@@ -33,12 +36,17 @@ function sendMessage(id){
               if(info.<?= $item ?> !== undefined) tempdata+='<tr style="background-color:'+color +'"><td><?= $item ?> :' + info.<?= $item ?>+'</td></tr>';
 
             <?php endforeach ?>
-            tempdata+='<tr><td> clearDna : '+info.clearDna+'</td></tr>';
-            tempdata+='<tr><td> dna : '+info.dna+'</td></tr>';
+              count++;
+              if (count%2==0) color='cyan'; else color='white'
+            tempdata+='<tr style="background-color:'+color +'"><td> clearDna : '+info.clearDna+'</td></tr>';
+            count++;
+              if (count%2==0) color='cyan'; else color='white';
+            tempdata+='<tr style="background-color:'+color +'"><td> dna : '+info.dna+'</td></tr>';
                       
             
             tempdata+='</table>';
             addLog(tempdata);
+            addLog(parseInt(toto) - parseInt(info.maxCall));
             if(info.operation =='complete') stopTask();
             
 
@@ -53,6 +61,10 @@ function sendMessage(id){
              var totperc = perc.innerHTML;
              perc.innerHTML   = parseInt(totperc)  +  parseInt(titi.progress) + "%" ;
              perc.style.width = (Math.floor(pBar.clientWidth * (titi.progress)) + 15) + 'px';
+
+             var scrollIntoViewOptions = { behavior: "smooth", block: "center" };   
+             document.getElementById(info.maxCall).scrollIntoView(scrollIntoViewOptions); 
+             
 
            //............
           }
