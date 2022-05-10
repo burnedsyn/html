@@ -20,6 +20,7 @@ class CollectionController extends BaseController
       $config = config('NftConfig');
       $maxCall=intval($config->nftCollectionSize);
       $_SESSION['maxCall']=$maxCall;
+      $_SESSION['provenanceCumulativeString']='';
         $test=new Cards();
         $cards=$test->findAll();
         //$cards=null;
@@ -37,18 +38,13 @@ class CollectionController extends BaseController
     public function tim()
     { 
       $start_time = microtime(TRUE);
-     
+      $config = config('NftConfig');
       $message=[];
       $temp= new SceneManager();
       $message=$temp->getScene();
-      
-
-
-      
-      
-   if ($message !=''){
+      if ($message !=''){
         
-        $progress=1;
+        $progress=1/intval($config->nftCollectionSize);
        
       }
       else {

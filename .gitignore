@@ -130,3 +130,4 @@ nb-configuration.xml
 public/build/*
 public/phpMyAdmin/*
 build/*
+app/ressources/*

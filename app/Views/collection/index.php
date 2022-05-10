@@ -9,6 +9,7 @@ function sendMessage(id){
   $.ajax({
      url:'/collection/tim',
      method: 'post',
+     async: 'false',
      data: 'id',
      success: function(response){
        
@@ -17,7 +18,7 @@ function sendMessage(id){
           
           if(titi.message != null) {
             var info = titi.message;
-            addLog('<h2>Scene '+info.maxCall+'</h2>');
+            addLog('<h2>Scene to go '+info.maxCall+'</h2>');
             var tempdata;
             tempdata='';
             <?php
@@ -27,44 +28,71 @@ function sendMessage(id){
             ?>
             var count=0;
             var toto=<?= $size ?> 
-            tempdata+='<table style="background-color:white" id="'+info.maxCall+'">';
+            tempdata+='<table style="background-color:white" >';
             if(info.error !== undefined )
-            tempdata+= '<tr style="background-color:red; color:white;"><td>' + info.error + '</td></tr>';
+            tempdata+= '<tr style="background-color:red; color:white;"><td>error</td><td>' + info.error + '</td></tr>';
             <?php foreach ($layers as $item): ?>
               count++;
               if (count%2==0) color='cyan'; else color='white'
-              if(info.<?= $item ?> !== undefined) tempdata+='<tr style="background-color:'+color +'"><td><?= $item ?> :' + info.<?= $item ?>+'</td></tr>';
+              if(info.<?= $item ?> !== undefined) tempdata+='<tr style="background-color:'+color +'"><td><?= $item ?> </td><td>' + info.<?= $item ?>+'</td></tr>';
 
             <?php endforeach ?>
               count++;
               if (count%2==0) color='cyan'; else color='white'
-            tempdata+='<tr style="background-color:'+color +'"><td> clearDna : '+info.clearDna+'</td></tr>';
-            count++;
+              tempdata+='<tr style="background-color:'+color +'"><td> clearDna </td><td> '+info.clearDna+'</td></tr>';
+              count++;
               if (count%2==0) color='cyan'; else color='white';
-            tempdata+='<tr style="background-color:'+color +'"><td> dna : '+info.dna+'</td></tr>';
-                      
-            
+              tempdata+='<tr style="background-color:'+color +'"><td> dna </td><td> '+info.dna+'</td></tr>';
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> file signature</td><td>'+info.sig+'</td></tr>';       
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> Saved In db</td><td>'+info.saved+'</td></tr>'; 
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> provenancestring</td><td>'+info.provenancestring+'</td></tr>'; 
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> Creation Date</td><td>'+info.creationDate+'</td></tr>'; 
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> Image Path</td><td>'+info.imagePath+'</td></tr>'; 
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> Signature Path</td><td>'+info.signatureFile+'</td></tr>'; 
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> signature validity</td><td>'+info.validitySignature+'</td></tr>';
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr style="background-color:'+color +'"><td> Json informations</td><td>'+info.jsonFile+'</td></tr>';  
+              count++;
+              if (count%2==0) color='cyan'; else color='white';
+              tempdata+='<tr><td colspan="2" style="text-align: center; vertical-align: middle;"><img width="10%" height="auto" id="'+info.maxCall+'" src="'+info.imagePath+'"></td></tr>'; 
+
             tempdata+='</table>';
             addLog(tempdata);
-            addLog(parseInt(toto) - parseInt(info.maxCall));
-            if(info.operation =='complete') stopTask();
+            
             
 
 
 
 
             //..........
-
+            var testpercent=parseFloat(titi.progress)*100;
+            
             var pBar = document.getElementById('progressor');
-             pBar.value = pBar.value+(titi.progress);
+             pBar.value = pBar.value+(testpercent);
              var perc = document.getElementById('percentage');
              var totperc = perc.innerHTML;
-             perc.innerHTML   = parseInt(totperc)  +  parseInt(titi.progress) + "%" ;
-             perc.style.width = (Math.floor(pBar.clientWidth * (titi.progress)) + 15) + 'px';
+             var localtot=(parseInt(totperc)  +  parseInt(testpercent));
+             perc.innerHTML   = localtot + "%" ;
+             perc.style.width = (Math.floor(pBar.clientWidth * testpercent) + 15) + 'px';
 
              var scrollIntoViewOptions = { behavior: "smooth", block: "center" };   
              document.getElementById(info.maxCall).scrollIntoView(scrollIntoViewOptions); 
-             
+             if(info.operation =='complete') stopTask(info); else sendMessage(1);
 
            //............
           }
@@ -79,18 +107,22 @@ var myInterval;
 
  function startTask() {
   
- 
-  myInterval=setInterval( "sendMessage(1)", 1000);
+ sendMessage(1);
 
         
    
 }   
     
   
- function stopTask() {
-  if (typeof myInterval != 'undefined') clearTimeout(myInterval);
-     clearInterval(myInterval);
-     addLog('Interrupted');
+ function stopTask(info) {
+     
+     addLog('Task complete');
+     var tempstr='<h3>provenanceCumulativeString<h3>';
+     tempstr+='<textarea id="provenanceCumulativeString" name="provenanceCumulativeString" rows="5" cols="127">'+info.provenanceCumulativeString +'</textarea><hr>';
+     tempstr+='<div>Recorded cumulative string hash : '+info.provenanceCumulativeHash +' </div><hr>';
+
+     addLog(tempstr);
+
  }
   
  function addLog(message) {
@@ -103,19 +135,9 @@ var myInterval;
 
 <h1>Collection</h1>
 <?= $welcome?>
-<?php if(isset($Cards) && $Cards != null):?>
-<ul>
 
-<?php foreach ($Cards as $item): ?>
-
-    <li><?= $item['dna'] ?></li>
-
-<?php endforeach ?>
-
-</ul>
-<?php endif ?>
 <br />
-        <input type="button" onclick="startTask();"  value="Start Long Task" />
+        <input type="button" onclick="startTask();"  value="Generate NFTs" />
         <input type="button" onclick="stopTask();"  value="Stop Task" />
         <br />
         <br />
@@ -124,8 +146,8 @@ var myInterval;
         <br />
         <div id="results" ></div>
         <br />
-         
+       
         <progress id='progressor' value="0" max='100' style=""></progress>  
-        <span id="percentage" style="text-align:right; display:block; margin-top:5px;">0</span>
+        <span id="percentage" style="text-align:leftright; display:block; margin-top:5px;">0</span>
 
 <?= $this->endSection() ?>

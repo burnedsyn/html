@@ -16,6 +16,7 @@ class SceneManager
     public $pubkeyid;
     public $message;
     public $collection;
+    public $provenanceCumulativeString;
     public function __construct()
     {
         $this->config = config('NftConfig');
@@ -25,6 +26,7 @@ class SceneManager
         $this->collection =array();
         $this->privKey=openssl_pkey_get_private('file://./priv.key');
         $this->pubkeyid = openssl_pkey_get_public("file://./pub.key");
+        $this->provenanceCumulativeString="";
 
     } // fin construct
 
@@ -32,7 +34,7 @@ class SceneManager
     {
         //donne un élément de layer un élément unique et avec la rareté
 
-
+       
         if (is_dir($ressourcesPath)) {
             $layer_info = get_dir_file_info($ressourcesPath);
         } // ressource path est un repertoire.
@@ -106,13 +108,15 @@ class SceneManager
 
         $scene = [];
         $test=1;
+        $start=1;
         $this->db = \Config\Database::connect();
         $builder = $this->db->table('cards');
         $errorDna=0;
         $tempErrorString='';
         
         while (!empty($test)) {
-            $test--;
+            if($test===1 && $start===1) $start--;
+            
             foreach ($this->layers as $currentLayer) {
                 $pathtoscan = $this->ressourcePath . $currentLayer;
                 $scene[$currentLayer]=$this->getOne($pathtoscan);
@@ -130,8 +134,9 @@ class SceneManager
             $scene=$this->verifScene($scene);
             $query = $builder->where(['dna' => $scene['dna']]);
             $test=$query->countAllResults();
-            $errorDna+=$test;
+            $errorDna+=$test-$start;
             if($errorDna > 0){
+                
                 $tempErrorString.="<hr> Error Dna Exist <br>Restoring scene<br> dna ".$scene['dna']."<br>";
             }
                         
@@ -141,8 +146,7 @@ class SceneManager
         if($tempErrorString != ''){
             if(isset($scene['error'])) $scene['error'].=$tempErrorString; else $scene['error']=$tempErrorString;
         }
-        //verif conformity of this scene
-        $scene=$this->verifScene($scene);
+        
         //as we have a verified scene and thus all data for layer are ok we build the image
         $scene["sig"]=null;
         $scene["errorDna"]=$errorDna; 
@@ -155,12 +159,63 @@ class SceneManager
             $images[]= $this->initImage($scene[$layer],$imgformat);
 
         } 
-        
-                        
+        $card=$scene;
+        unset($card['errorDna']);
+        unset($card['error']);
+        if($builder->insert($card)){
+            $scene['saved']='ok';
+            $this->provenanceCumulativeString.=$scene['dna'];
+            $_SESSION['provenanceCumulativeString'].=$this->provenanceCumulativeString;
+            $provenanceCumulativeString2=hash('sha512',$this->provenanceCumulativeString);
+            $scene["provenancestring"] = $provenanceCumulativeString2;
+            $elem=count($images);
+               $baseimage=$images[0];
+               for($k=1; $k <=$elem-1; $k++){
+                $baseimage->compositeImage($images[$k],$images[$k]->getImageCompose(), 0, 0 );
+            }
+            
+            $pathtoimg="./build/images/";
+            $i=intval($this->config->nftCollectionSize) - intval($_SESSION['maxCall']);
+           //$baseimage->writeImage($pathtoimg.$i.".png");
+            if(!$baseimage->writeImage($pathtoimg.$i.".png")) die('error writing image file');
+            $scene["sig"]=hash_file('sha3-512', $pathtoimg.$i.".png");
+               $scene["creationDate"]=date("Y-m-d H:i:s");
+               $scene["imagePath"]="/build/images/".$i.".png";
+               openssl_sign($scene['sig'], $hashSig, $this->privKey);
+               file_put_contents('./build/imgsig/'.$i.'.dat', $hashSig);
+               $verifSigData=file_get_contents('../public/build/imgsig/'.$i.'.dat');
+               // indique si la signature est correcte
+               $ok = openssl_verify($scene['sig'],$verifSigData, $this->pubkeyid);
+               if ($ok == 1) {
+                   $scene['validitySignature']= "confirmed";
+                   $scene['signatureFile'] = '/build/imgsig/' . $i . '.dat';
+               } elseif ($ok == 0) {
+                $scene['validitySignature']= "invalid file";
+               } else {
+                $scene['validitySignature']= "error while verifying this file";
+               }               //little tric to save the json path in the json file before being certain that it is written see the if not
+               $scene['jsonFile']='/build/cardinfo/'.$i.'.json';
+               $card2=print_r($scene,true);
+               $card2=json_encode($card2);
+               if ( ! write_file('./build/cardinfo/'.$i.'.json', $card2)) {
+               
+                $card['jsonFile']=null;
+                die('error writing json');
+            } 
+
+        }
+
+
+
                
         $scene['maxCall']=$_SESSION['maxCall'];
         $_SESSION['maxCall']--;
-        if ($_SESSION['maxCall']==0) $scene['operation']='complete';
+        if ($_SESSION['maxCall']<=0) {
+            $scene['operation']='complete';
+            $scene['provenanceCumulativeString']= $_SESSION['provenanceCumulativeString'];
+            $scene['provenanceCumulativeHash']=hash("sha512",$_SESSION['provenanceCumulativeString']);
+
+        }
         
         return $scene;
     } //fin getScene

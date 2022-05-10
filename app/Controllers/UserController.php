@@ -134,7 +134,7 @@ public function verifScene(array $card, TarotCard $baseCard){
 
 
             }  
-        
+            
            if($builder->insert($card)){
                // here we got a unic adn stored in db we create the image in  build/images directory
                echo("added : ".$card['dna']."<hr>");
