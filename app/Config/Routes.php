@@ -38,6 +38,7 @@ $routes->post("/collection",'CollectionController::index');
 //$routes->resource('/sse');
 $routes->post('/user/tim','UserController::tim');
 $routes->post('/collection/tim','CollectionController::tim');
+$routes->post('/collection/postGeneration','CollectionController::postGeneration');
 
 
 $routes->group("user",function($routes) {

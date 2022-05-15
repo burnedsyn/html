@@ -45,7 +45,7 @@ class Collection extends Model
     {
         $this->db = \Config\Database::connect();
         if ($this->db->tableExists('collection')) {
-            // some code...
+           //nothing to do
            
         } 
         else {
@@ -67,23 +67,41 @@ class Collection extends Model
                     'constraint'     => ['publish', 'pending', 'draft'],
                     'default'        => 'draft',
                 ],
+                'cumulativeHash' => [
+                 'type' => 'varchar',
+                'constraint' =>'128',
+                ],
+                'provenanceCumulativeString' =>[
+                    'type'           => 'TEXT',
+                    'null'           => true,
+
+                ],
+                'imagesCid'=>[
+                    'type' => 'VARCHAR',
+                    'constraint' => '2083',
+                    'null' => true,
+                ],
+
+
+
+
                 'createdAt datetime default now()',
                 'updatedAt datetime default now() on update now()',
                 'deletedAt datetime DEFAULT NULL',
             ];
             $forge->addField($fields);
             try {
-                // try something
+                
                 $forge->createTable('collection', true);
               }
               catch (\InvalidArgumentException $ex) { // "$ex" is required
-                // handle the exception
+                
                 echo("<h1>Table collection NOT OK</h1>");
               }
             
             
         }
         
-        $this->allowedFields[] = ['title','description','status','createdAt','updatedAt','deletedAt'];
+        $this->allowedFields[] = ['title','description','status','cumulativeHash','provenanceCumulativeString','createdAt','updatedAt','deletedAt'];
     }
 }

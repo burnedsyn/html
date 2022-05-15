@@ -9,6 +9,8 @@ use App\Models\Collection;
 use App\Models\Cards;
 use CodeIgniter\API\ResponseTrait;
 use App\Libraries\SceneManager;
+
+
 class CollectionController extends BaseController
 
 {   
@@ -59,7 +61,15 @@ class CollectionController extends BaseController
         
     }
     
-  
+    public function postGeneration() {
+
+        
+          $message='No Change';
+        $progress=0;
+        $this->send_message($message , $progress);
+       
+
+     }
 
   public function send_message($message, $progress) {
        
