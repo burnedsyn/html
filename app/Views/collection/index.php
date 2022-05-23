@@ -1,7 +1,7 @@
 <?= $this->extend('Views/collection/layout') ?>
 <?= $this->section('content') ?>
 <!-- Script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
 
 <script type="text/javascript">
   function sendMessage(id) {
@@ -122,7 +122,7 @@
     });
 
   }
-  var myInterval;
+  
 
   function startTask() {
 
@@ -232,11 +232,6 @@
 
   function createCollection() {
     var frm = $('#postGenForm');
-    alert('test'+frm);
-   // frm.submit(function (e) {
-
-   // e.preventDefault();
-
     $.ajax({
             type: frm.attr('method'),
             url: frm.attr('action'),
@@ -249,8 +244,8 @@
             console.log('An error occurred.');
             console.log(response);
            },
-          });
-    //} );
+     });
+   
    
 
   }

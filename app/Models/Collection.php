@@ -81,10 +81,6 @@ class Collection extends Model
                     'constraint' => '2083',
                     'null' => true,
                 ],
-
-
-
-
                 'createdAt datetime default now()',
                 'updatedAt datetime default now() on update now()',
                 'deletedAt datetime DEFAULT NULL',
@@ -96,7 +92,7 @@ class Collection extends Model
               }
               catch (\InvalidArgumentException $ex) { // "$ex" is required
                 
-                echo("<h1>Table collection NOT OK</h1>");
+                echo("<h1>Table collection NOT OK</h1> error : ".$ex);
               }
             
             

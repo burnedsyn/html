@@ -52,24 +52,25 @@ class CollectionController extends BaseController
       else {
         $message='No Change';
         $progress=0;
-      } 
-        $end_time = microtime(TRUE);
-        $message['totalTime']=$end_time-$start_time;
+       } 
+     $end_time = microtime(TRUE);
+     $message['totalTime']=$end_time-$start_time;
         
-        $this->send_message($message , $progress); 
+     $this->send_message($message , $progress); 
         
         
     }
     
     public function postGeneration() {
+      //get POST formdata and create the collection in the db. then create the final json file with cid and all stuff.
+      $cid=$this->request->getPost('cid');
 
-        
-          $message='No Change';
-        $progress=0;
-        $this->send_message($message , $progress);
+      $message='No Change cid :'.$cid;
+      $progress=0;
+      $this->send_message($message , $progress);
        
 
-     }
+        }
 
   public function send_message($message, $progress) {
        
