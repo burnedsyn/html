@@ -23,14 +23,7 @@ class CollectionController extends BaseController
       $maxCall=intval($config->nftCollectionSize);
       $_SESSION['maxCall']=$maxCall;
       $_SESSION['provenanceCumulativeString']='';
-        $test=new Cards();
-        $cards=$test->findAll();
-        //$cards=null;
-        /* $table = new \CodeIgniter\View\Table();
-        $test2=$table->generate($cards); 
-        $this->collection=new Collection();,"Cards"=>$cards*/
-
-
+       
         $data=["welcome"=>"Collection Manager"];
         return view('Views/collection/index', $data);
      
@@ -63,9 +56,21 @@ class CollectionController extends BaseController
     
     public function postGeneration() {
       //get POST formdata and create the collection in the db. then create the final json file with cid and all stuff.
-      $cid=$this->request->getPost('cid');
+      $db      = \Config\Database::connect();
+      $builder = $db->table('collection');
 
-      $message='No Change cid :'.$cid;
+      $coll=[];
+      $coll['id']=null;
+      $coll["provenanceCumulativeString"]= $this->request->getPost("provenanceCumulativeString");
+      $coll['title']= $this->request->getPost("title");
+      $coll['cumulativeHash']=  $this->request->getPost("cumulativeHash");
+      
+      $coll['status']='draft';
+      $coll['description']=$this->request->getPost("description");
+      $coll['imagesCid']=$this->request->getPost('imagesCid');
+      
+      $builder->insert($coll);
+      $message='No Change cid :'.$coll['imagesCid'];
       $progress=0;
       $this->send_message($message , $progress);
        
@@ -82,7 +87,7 @@ class CollectionController extends BaseController
     
     
     
-
+    
   
 }
 

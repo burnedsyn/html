@@ -161,38 +161,38 @@
 
     var chs = document.createElement("input");
     chs.setAttribute("type", "text");
-    chs.setAttribute("name", "cumulativeHashString");
+    chs.setAttribute("name", "cumulativeHash");
     chs.setAttribute("hidden", 'hidden');
     chs.setAttribute("value", info.provenanceCumulativeHash);
 
     var collectionTitle = document.createElement("input");
     collectionTitle.setAttribute("type", "text");
-    collectionTitle.setAttribute("name", "collectionTitle");
+    collectionTitle.setAttribute("name", "title");
     collectionTitle.setAttribute("placeholder", "Collection Title");
 
     var g = document.createElement("LABEL");
     var ctl = document.createTextNode("Collection Title");
-    g.setAttribute("for", "collectionTitle");
+    g.setAttribute("for", "title");
     g.appendChild(ctl);
 
     var collectionDescription = document.createElement("textarea");
-    collectionDescription.setAttribute("name", "collectionDescription");
+    collectionDescription.setAttribute("name", "description");
     collectionDescription.setAttribute("rows", '10');
     collectionDescription.setAttribute("cols", '127');
 
     var g1 = document.createElement("LABEL");
     var cdl = document.createTextNode("Collection Description");
-    g1.setAttribute("for", "collectionDescription");
+    g1.setAttribute("for", "description");
     g1.appendChild(cdl);
 
     var cid = document.createElement("input");
     cid.setAttribute('type', 'text');
-    cid.setAttribute('name', "cid");
+    cid.setAttribute('name', "imagesCid");
     cid.setAttribute("placeholder", "ipfs://");
     cid.setAttribute('maxLength', '2083');
     var g2 = document.createElement("LABEL");
     var cidl = document.createTextNode("insert the complete link CID of your  images directory on IPFS");
-    g2.setAttribute("for", "cid");
+    g2.setAttribute("for", "imagesCid");
     g2.appendChild(cidl);
 
 

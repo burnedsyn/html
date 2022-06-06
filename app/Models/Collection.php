@@ -52,7 +52,7 @@ class Collection extends Model
             echo("<h1>createtable collection</h1>");
             $forge = \Config\Database::forge();
             $fields = [
-                'id'          => [],
+                
                 'title'       => [
                     'type'           => 'VARCHAR',
                     'constraint'     => '512',
@@ -85,6 +85,7 @@ class Collection extends Model
                 'updatedAt datetime default now() on update now()',
                 'deletedAt datetime DEFAULT NULL',
             ];
+            $forge->addField('id');
             $forge->addField($fields);
             try {
                 
@@ -98,6 +99,6 @@ class Collection extends Model
             
         }
         
-        $this->allowedFields[] = ['title','description','status','cumulativeHash','provenanceCumulativeString','createdAt','updatedAt','deletedAt'];
+        $this->allowedFields[] = ['title','description','status','cumulativeHash','provenanceCumulativeString','imagesCid','createdAt','updatedAt','deletedAt'];
     }
 }
