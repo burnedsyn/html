@@ -71,7 +71,7 @@ class Cards extends Model
                 // try something
                 $forge->createTable('cards', true);
               }
-              catch (\InvalidArgumentException $ex) { // "$ex" is required
+              catch (\Exception $ex) { // "$ex" is required
                 // handle the exception
                 echo("<h1>Table collection NOT OK</h1>");
               }

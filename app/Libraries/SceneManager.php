@@ -164,6 +164,7 @@ class SceneManager
         unset($card['error']);
         if($builder->insert($card)){
             $scene['saved']='ok';
+            $scene['id']=$this->db->insertID();
             $this->provenanceCumulativeString.=$scene['dna'];
             $_SESSION['provenanceCumulativeString'].=$this->provenanceCumulativeString;
             $provenanceCumulativeString2=hash('sha512',$this->provenanceCumulativeString);
@@ -195,7 +196,8 @@ class SceneManager
                 $scene['validitySignature']= "error while verifying this file";
                }               //little tric to save the json path in the json file before being certain that it is written see the if not
                $scene['jsonFile']='/build/cardinfo/'.$i.'.json';
-               $card2=print_r($scene,true);
+               $card2=$scene;
+               
                $card2=json_encode($card2);
                if ( ! write_file('./build/cardinfo/'.$i.'.json', $card2)) {
                

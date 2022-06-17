@@ -13,6 +13,8 @@ class NftConfig extends BaseConfig
     public $imgformat= 'png';
     public $buildPath='/var/www/html/build/';
     public $nftCollectionSize=0;
+    public $raritySeparator="rarity#";
+    public $commonSeparator="common#";
 
 
 

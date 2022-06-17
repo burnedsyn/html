@@ -39,6 +39,7 @@ $routes->post("/collection",'CollectionController::index');
 $routes->post('/user/tim','UserController::tim');
 $routes->post('/collection/tim','CollectionController::tim');
 $routes->post('/collection/postGeneration','CollectionController::postGeneration');
+$routes->post('/collection/createJsonFile','CollectionController::createJsonFile');
 
 
 $routes->group("user",function($routes) {

@@ -81,6 +81,11 @@ class Collection extends Model
                     'constraint' => '2083',
                     'null' => true,
                 ],
+                'signaturesCid'=>[
+                    'type' => 'VARCHAR',
+                    'constraint' => '2083',
+                    'null' => true,
+                ],
                 'createdAt datetime default now()',
                 'updatedAt datetime default now() on update now()',
                 'deletedAt datetime DEFAULT NULL',
@@ -100,5 +105,10 @@ class Collection extends Model
         }
         
         $this->allowedFields[] = ['title','description','status','cumulativeHash','provenanceCumulativeString','imagesCid','createdAt','updatedAt','deletedAt'];
+    }
+
+    function get_collection_info($collection_id) {
+        $query = $this->db->query("SELECT * FROM collection WHERE id = ?", array($collection_id));
+        return $query->getRowArray();
     }
 }

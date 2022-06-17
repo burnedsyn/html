@@ -122,7 +122,23 @@
     });
 
   }
-  
+  function createJsonFile(collectionId){
+    $.ajax({
+      url: '/collection/createJsonFile',
+      method: 'post',
+      async: 'false',
+      data: {"id":collectionId},
+      cache:false,
+      success: function(response) {
+        
+
+        
+      } //fin success
+     } //fin ajax call
+     );//fin ajax call
+
+  }// fin createJsonFile()
+
 
   function startTask() {
 
@@ -194,6 +210,15 @@
     var cidl = document.createTextNode("insert the complete link CID of your  images directory on IPFS");
     g2.setAttribute("for", "imagesCid");
     g2.appendChild(cidl);
+    var sid = document.createElement("input");
+    sid.setAttribute('type', 'text');
+    sid.setAttribute('name', "signaturesCid");
+    sid.setAttribute("placeholder", "ipfs://");
+    sid.setAttribute('maxLength', '2083');
+    var g3 = document.createElement("LABEL");
+    var cidl1 = document.createTextNode("insert the complete link CID of your  signatures directory on IPFS");
+    g3.setAttribute("for", "signaturesCid");
+    g3.appendChild(cidl1);
 
 
     // create a submit button
@@ -219,7 +244,10 @@
     form.appendChild(br.cloneNode());
     form.appendChild(cid);
     form.appendChild(br.cloneNode());
-
+    form.appendChild(g3);
+    form.appendChild(br.cloneNode());
+    form.appendChild(sid);
+    form.appendChild(br.cloneNode());
     form.appendChild(s);
     //Add the form to the collection div
     document.getElementById('Collection').appendChild(form);
@@ -237,18 +265,33 @@
             url: frm.attr('action'),
             data: frm.serialize(),
             success: function(response) {
-            console.log('Submission was successful.');
-            console.log(response);
+            addTo('CollectionResult','<span style="background-color:#00ff00;" >Submission was successful.</span><br>');
+            var reponseData = JSON.parse(response);
+            var titi= reponseData.message;
+            var collectionData=titi.collection;
+            var tempstr='';
+            tempstr+='<h2>Collection Data</h2>';
+            tempstr+="Collection ID : "+collectionData.id+"<br>";
+            tempstr+="Collection Title : "+collectionData.title+"<br>";
+            tempstr+="Collection Description : "+collectionData.description+"<br>";
+            tempstr+="Collection Images CID : "+collectionData.imagesCid+"<br>";
+            tempstr+="Collection Signatures CID : "+collectionData.signaturesCid+"<br>";
+            tempstr+="Collection Status : "+collectionData.status+"<br>";
+            tempstr+='<input type="button" onclick="createJsonFile('+collectionData.id+');" value="create json file" />';
+
+            addTo('CollectionResult',titi.message);
+            addTo('CollectionResult',tempstr);
+
+
            },
             error: function (response) {
             console.log('An error occurred.');
             console.log(response);
            },
      });
-   
-   
 
   }
+ 
   
   function addLog(message) {
     var r = document.getElementById('results');
@@ -279,5 +322,8 @@
 <progress id='progressor' value="0" max='100' style=""></progress>
 <span id="percentage" style="text-align:left; display:block; margin-top:5px;">0</span>
 <hr>
-<div id="Collection"></div>
+<div id="Collection">
+
+</div>
+<div id="CollectionResult"></div>
 <?= $this->endSection() ?>
